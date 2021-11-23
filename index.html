@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consumiendo una API desde JS</title>
+        <!-- Adding my JS file -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Adding the Axios library (CDN) -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- Adding my JS file -->
+        <script src="main.js" async defer></script>
+    </head>
+
+    <body>
+        <form id="form">
+            <label for="IPNumber">Introduce tu dirección IPv4:</label><br>
+            <input required
+                pattern="(^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)(\.(?!$)|$)){4}$)"
+                name="IP" id="IP">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+
+</html>
